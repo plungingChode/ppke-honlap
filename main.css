@@ -1,0 +1,65 @@
+body {
+    background-image: url("pooh.jpg");
+    background-repeat: repeat-x;
+    margin: 0;
+    height: 100vh;
+}
+
+.title-container {
+    text-align: center;
+    margin-top: 200px;
+    position: relative;
+}
+
+.title {
+    display: inline-block;
+    color: magenta;
+    padding: 0;
+    animation: rotation 4s infinite linear;
+}
+
+.link {
+    color: aquamarine;   
+}
+
+.link:hover {
+    margin-left: 500px;
+}
+
+#sajat-kep {
+    width: 5vw;
+    height: 5vh;
+    animation: scale 250s forwards linear;
+}
+
+.top {
+    background: red;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+@keyframes scale {
+    from {
+        width: 5vw;
+        height: 5vh;
+    }
+
+    to {
+        width: 100vw;
+        height: 100vh;
+    }
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+.title:hover {
+    animation: rotation 0.3s infinite linear;
+}

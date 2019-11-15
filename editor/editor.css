@@ -1,0 +1,19 @@
+#textarea {
+    white-space: pre;
+    font-family: 'Consolas';
+    font-size: 16px;
+}
+
+#cursor {
+  position: absolute;
+  height: 16px;
+  width: 2px;
+  background: red;
+  animation: blink-anim 1s steps(2, start) infinite;
+}
+
+@keyframes blink-anim {
+  to {
+    visibility: hidden;
+  }
+}
